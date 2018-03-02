@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Crystal Game</title>
+  <!-- Added link to the jQuery Library -->
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/style.css"> 
+  <link rel="stylesheet" href="css/reset.css"> 
+  
+  <!-- Added a link to Bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+	
+<body>
+  <div class="container">
+    <!-- Title  -->
+    <div class="row">
+	    <div class="col-md-9">
+	      <h2 class="title"><strong>Collector</strong></h2>
+		</div>
+	</div>    		
+	
+	<!-- Instructions -->
+	<div class="row">
+		<div class="col-md-12">
+			<div class="instructions">
+				<p class="instFont">At the beginning of the game, a random number will be generated.  Your goal is to match that number.</p>
+				<p class="instFont">To do this, you must click on the color switches.  These also will have random numbers assigned to them.</p>
+				<p class="instFont">Do not go over the target number.  If you do, you lose...And Bowser is watching...</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-3">
+			<p class="totalScore">Your number to match: </p>
+		</div>
+		<div class="col-md-3">
+			<p class="totalScore">Your total score is: </p>
+		</div>
+	</div>
+
+
+	<!-- Random number and wins/losses -->
+	<div class="row">
+		<div class="col-sm-3">
+			<div class="numToBeat">
+				<span id="display-number"></span>
+			</div>
+		</div>
+		<div class="col-sm-3">
+			<div class="scoreDisplay">
+				<span id="total-score-display">
+					0
+				</span>
+			</div>
+		</div>
+		<div class="col-sm-3">
+			<div class="winLossBox">
+				<p id='win'> Wins: 0</p>
+				<p id='loss'>Losses: 0</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-sm-3">
+
+		</div>
+		<div class="col-sm-4">
+			<div class="colorSwitches">
+				<button class="yellow1"><img src=images/yellow.png></img></button>
+				<button class="green1"><img src=images/green.png></img></button>
+				<button class="red1"><img src=images/red.png></img></button>
+				<button class="blue1"><img src=images/blue.png></img></button>
+			</div>
+		</div> 
+	</div>
+  </div>
+
+<script src="javascript/game.js"></script>
+
+</body>
+</html>
