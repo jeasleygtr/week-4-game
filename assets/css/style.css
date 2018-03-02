@@ -34,9 +34,8 @@ body {
 }
 
 #display-number {
-	background-color: black;
 	text-align: center;
-	padding-left: 0px;
+	padding-left: 90px;
 	font-size: 42px;
 	color: white;
 }
@@ -48,22 +47,21 @@ body {
 }
 
 #total-score-display {
-	background-color: black;
 	text-align: center;
-	padding-left: 0px;
+	padding-left: 90px;
 	font-size: 42px;
 	color: white;
 }
 
 .winLossBox {
-	background-color: black;
 	padding-bottom: 20px;
 	color: white;
+	font-size: 24px;
 }
 
 #win {
 	text-align: center;
-	padding-top: 30px;
+	padding-top: 10px;
 }
 
 #loss {
@@ -78,7 +76,7 @@ body {
 
 .yellow1 {
 	background-color:black;
-	margin: 0px;
+	margin: 5px;
 
 }
 
